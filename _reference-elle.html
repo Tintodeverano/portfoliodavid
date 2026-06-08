@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<!--  _ _      _
+  ___| | | ___( )___
+ / _ \ | |/ _ \// __|
+|  __/ | |  __/ \__ \
+ \___|_|_|\___| |___/
+| |__   ___  _ __ ___   ___ _ __   __ _  __ _  ___
+| '_ \ / _ \| '_ ` _ \ / _ \ '_ \ / _` |/ _` |/ _ \
+| | | | (_) | | | | | |  __/ |_) | (_| | (_| |  __/
+|_| |_|\___/|_| |_| |_|\___| .__/ \__,_|\__, |\___|
+                           |_|          |___/
+
+welcome to my source code, pls excuse the mess ฅ^•ﻌ•^ฅ-->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="this is elle's homepage. my home on the internet. i like to make stuff with html and i will put some of it on here">
+    <meta name="keywords" content="elle, homepage, very internet person, html, small web">
+    <meta name="author" content="elle">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="fediverse:creator" content="@e11e@mastodon.social">
+    <meta property="og:title" content="elle's homepage">
+    <meta property="og:description" content="elle's hypertext stuff">
+    <meta property="og:url" content="https://ellesho.me/page">
+    <meta property="og:image" content="https://ellesho.me/card.webp">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="elle's homepage">
+
+    <title>elle's homepage / start</title>
+    
+    <link rel="canonical" href="https://ellesho.me/page">
+    <link rel="icon" href="https://ellesho.me/favicon.svg" type="image/svg+xml" sizes="any">
+    <link rel="icon" href="https://ellesho.me/favicon.ico" type="image/x-icon" sizes="16x16">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://ellesho.me/apple-touch-icon.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="alternate" type="application/rss+xml" title="elle's homepage blog" href="https://ellesho.me/page/rss.xml">
+    <link rel="alternate" type="application/rss+xml" title="elle's microposts" href="https://posts.ellesho.me">
+    <link rel="alternate" type="application/rss+xml" title="elle's recent readings" href="https://bg.raindrop.io/rss/public/51278376">
+    <link rel="me" href="https://mastodon.social/@e11e">
+    <link rel="me" href="https://github.com/riotgoools">
+    <link rel="me" href="https://gravatar.com/elleeeeeeeee">
+    <link rel="me" href="https://ellebowmacaroni.tumblr.com">
+    <link rel="pgpkey" href="https://ellesho.me/key.pub">
+    <link rel="authorization_endpoint" href="https://indieauth.com/auth">
+    <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+    <link rel="microsub" href="https://aperture.p3k.io/microsub/972">
+    <link rel="webmention" href="https://webmention.io/ellesho.me_page_/webmention" />
+    <link rel="pingback" href="https://webmention.io/ellesho.me_page_/xmlrpc" />
+    <link rel="openid.delegate" href="https://ellesho.me/page">
+    <link rel="openid.server" href="https://openid.indieauth.com/openid">
+
+    <style>
+      :root {
+        --t:transparent;
+        --g0:#f3eef7;--g1:#ece7f2;--g2:#cec9d5;--g3:#aaa4b0;--g4:#8b878f;
+        --t1:#dff;--t2:#cee;--t3:#bdd;--t4:#8bb;
+        --p1:#dce;--p2:#bac;--p3:#a9b;--p4:#879;
+        --r1:#fee;--r2:#ecd;--r3:#ebc;--r4:#eab;
+      }
+      html {font-size:10px}
+      body {width:100vw;height:100vh;margin:0;background:var(--p1);overflow:hidden}
+      .center {display:flex;justify-content:center;align-items:center}
+  
+      @media (min-width:300px) {#screen {transform:scale(0.2)}}
+      @media (min-width:400px) {#screen {transform:scale(0.25)}}
+      @media (min-width:600px) {#screen {transform:scale(0.3)}}
+      @media (min-width:1800px) {#screen {transform:scale(0.4)}}
+      @media (min-width:3000px) {#screen {transform:scale(0.5)}}
+  
+      .sky {width:19em;height:15em;position:absolute;background:#fff;clip-path:polygon(0 5em, 1em 5em, 1em 4em, 3em 4em, 3em 2em, 4em 2em, 4em 1em, 5em 1em, 5em 0, 8em 0, 8em 1em, 9em 1em, 9em 2em, 10em 2em, 10em 1em, 11em 1em, 11em 0, 15em 0, 15em 1em, 16em 1em, 16em 3em, 18em 3em, 18em 4em, 19em 4em, 19em 9em, 18em 9em, 18em 10em, 17em 10em, 17em 13em, 16em 13em, 16em 14em, 15em 14em, 15em 15em, 11em 15em, 11em 14em, 10em 14em, 10em 13em, 8em 13em, 8em 14em, 4em 14em, 4em 13em, 3em 13em, 3em 11em, 1em 11em, 1em 10em, 0 10em);transform:scale(1)}
+      #skya {top:-110em;left:-40em}
+      #skyb {top:-35em;left:-90em}
+      #skyc {top:-90em;left:70em}
+  
+      header {position:absolute;top:-80em;width:152em;height:52em}
+
+      #elles {display:flex;position:absolute;top:0em;filter:drop-shadow(-1em 1em #fff);will-change:filter;z-index:2}
+      #ea, #la, #lb, #eb, #aa, #sa {position:relative;left:1em;margin-right:2em}
+      
+      #ea {top:10em;width:15em;height:17em;background:var(--r2);clip-path:polygon(0 5em, 1em 5em, 1em 3em, 2em 3em, 2em 2em, 3em 2em, 3em 1em, 5em 1em, 5em 0, 11em 0, 11em 1em, 13em 1em, 13em 2em, 14em 2em, 14em 4em, 15em 4em, 15em 8em, 14em 8em, 14em 9em, 13em 9em, 13em 10em, 11em 10em, 11em 11em, 7em 11em, 7em 10em, 6em 10em, 6em 8em, 7em 8em, 7em 7em, 10em 7em, 10em 6em, 11em 6em, 11em 5em, 10em 5em, 10em 4em, 6em 4em, 6em 5em, 5em 5em, 5em 7em, 4em 7em, 4em 11em, 5em 11em, 5em 12em, 7em 12em, 7em 13em, 10em 13em, 10em 12em, 12em 12em, 12em 11em, 14em 11em, 14em 12em, 15em 12em, 15em 15em, 14em 15em, 14em 16em, 12em 16em, 12em 17em, 5em 17em, 5em 16em, 3em 16em, 3em 15em, 2em 15em, 2em 14em, 1em 14em, 1em 12em, 0 12em)}
+      #ea::after {content:"";position:absolute;width:1em;height:1em;box-shadow:8em 1em var(--r3), 9em 1em #fff, 10em 1em #fff, 8em 2em var(--r3), 9em 2em #fff, 10em 2em #fff, 10em 3em var(--r3), 11em 2em var(--r3), 11em 3em var(--r3), 12em 3em #fff, 12em 4em var(--r3), 7em 8em var(--r3), 11em 8em var(--r3), 7em 9em var(--r3), 8em 9em var(--r3), 9em 9em var(--r3), 1em 10em var(--r3), 2em 12em var(--r3), 2em 13em var(--r3), 3em 13em var(--r3), 3em 14em var(--r3), 4em 14em var(--r3), 5em 14em var(--r3), 5em 15em var(--r3), 6em 15em var(--r3), 7em 15em var(--r3), 8em 15em var(--r3), 9em 15em var(--r3), 11em 15em var(--r3)}
+      
+      #la {width:7em;height:25em;background:var(--t2);clip-path:polygon(0 1em, 1em 1em, 1em 0, 4em 0, 4em 1em, 5em 1em, 5em 7em, 6em 7em, 6em 17em, 7em 17em, 7em 24em, 6em 24em, 6em 25em, 3em 25em, 3em 24em, 2em 24em, 2em 17em, 1em 17em, 1em 8em, 0 8em)}
+      #la::after {content:"";position:absolute;width:1em;height:1em;box-shadow:2em 1em #fff, 3em 1em #fff, 1em 2em var(--t3), 2em 2em #fff, 3em 2em #fff, 2em 3em var(--t3), 3em 3em var(--t3), 2em 4em var(--t3), 3em 4em #fff, 2em 5em var(--t3), 3em 5em #fff, 2em 6em var(--t3), 3em 6em #fff, 3em 7em var(--t3), 2em 15em var(--t3), 3em 18em var(--t3), 3em 19em var(--t3), 3em 20em var(--t3), 3em 21em var(--t3), 3em 22em var(--t3), 4em 23em var(--t3)}
+      
+      #lb {top:1em;width:7em;height:25em;background:#eee1ee;clip-path:polygon(0 2em, 1em 2em, 1em 1em, 4em 1em, 4em 3em, 5em 3em, 5em 12em, 6em 12em, 6em 19em, 7em 19em, 7em 25em, 6em 25em, 6em 26em, 3em 26em, 3em 24em, 2em 24em, 2em 20em, 1em 20em, 1em 13em, 0 13em)}
+      #lb::after {content:"";position:absolute;width:1em;height:1em;box-shadow:2em 2em #fff, 3em 2em #fff, 1em 3em var(--p1), 2em 3em #fff, 3em 3em #fff, 2em 4em var(--p1), 3em 4em var(--p1), 2em 5em var(--p1), 3em 5em #fff, 2em 6em var(--p1), 3em 6em #fff, 2em 7em var(--p1), 3em 7em #fff, 3em 8em var(--p1), 2em 16em var(--p1), 3em 19em var(--p1), 3em 20em var(--p1), 3em 21em var(--p1), 3em 22em var(--p1), 4em 23em var(--p1)}
+      
+      #eb {top:7em;width:15em;height:17em;background:var(--t2);clip-path:polygon(0 5em, 1em 5em, 1em 3em, 2em 3em, 2em 2em, 2em 1em, 4em 1em, 4em 0, 11em 0, 11em 1em, 13em 1em, 13em 2em, 14em 2em, 14em 4em, 15em 4em, 15em 9em, 14em 9em, 14em 9em, 14em 10em, 13em 10em, 13em 11em, 8em 11em, 8em 10em, 7em 10em, 7em 8em, 8em 8em, 8em 7em, 10em 7em, 10em 6em, 11em 6em, 11em 5em, 10em 5em, 10em 4em, 6em 4em, 6em 5em, 5em 5em, 5em 7em, 4em 7em, 4em 11em, 5em 11em, 5em 12em, 7em 12em, 7em 13em, 10em 13em, 10em 12em, 14em 12em, 14em 13em, 15em 13em, 15em 15em, 14em 15em, 14em 16em, 12em 16em, 12em 17em, 5em 17em, 5em 16em, 3em 16em, 3em 15em, 2em 15em, 2em 14em, 1em 14em, 1em 12em, 0 12em)}
+      #eb::after {content:"";position:absolute;width:1em;height:1em;box-shadow:8em 1em var(--t3), 9em 1em #fff, 10em 1em #fff, 8em 2em var(--t3), 9em 2em #fff, 10em 2em #fff, 10em 3em var(--t3), 11em 2em var(--t3), 11em 3em var(--t3), 12em 3em #fff, 12em 4em var(--t3), 8em 8em var(--t3), 12em 8em var(--t3), 8em 9em var(--t3), 9em 9em var(--t3), 10em 9em var(--t3), 1em 10em var(--t3), 2em 12em var(--t3), 2em 13em var(--t3), 3em 13em var(--t3), 3em 14em var(--t3), 4em 14em var(--t3), 5em 14em var(--t3), 5em 15em var(--t3), 6em 15em var(--t3), 7em 15em var(--t3), 8em 15em var(--t3), 9em 15em var(--t3), 11em 15em var(--t3)}
+      
+      #aa {top:1em;left:2em;width:6em;height:8em;background:var(--r2);clip-path:polygon(0 5em, 1em 5em, 1em 3em, 2em 3em, 2em 1em, 3em 1em, 3em 0, 5em 0, 5em 1em, 6em 1em, 6em 4em, 5em 4em, 5em 6em, 4em 6em, 4em 7em, 3em 7em, 3em 8em, 2em 8em, 1em 8em, 1em 7em, 0 7em)}
+      #aa::after {content:"";position:absolute;width:1em;height:1em;box-shadow:3em 1em var(--r3), 4em 1em #fff, 3em 2em var(--r3), 4em 2em #fff, 4em 3em var(--r3), 1em 6em var(--r3)}
+      
+      #sa {top:6em;width:13em;height:18em;background:#eee1ee;clip-path:polygon(0 4em, 1em 4em, 1em 2em, 2em 2em, 2em 1em, 4em 1em, 4em 0, 9em 0, 9em 1em, 11em 1em, 11em 2em, 12em 2em, 12em 5em, 11em 5em, 11em 6em, 9em 6em, 9em 5em, 8em 5em, 8em 4em, 5em 4em, 5em 5em, 4em 5em, 4em 6em, 6em 6em, 6em 7em, 9em 7em, 9em 8em, 11em 8em, 11em 9em, 12em 9em, 12em 11em, 13em 11em, 13em 14em, 12em 14em, 12em 16em, 11em 16em, 11em 17em, 9em 17em, 9em 18em, 4em 18em, 4em 17em, 2em 17em, 2em 16em, 1em 16em, 1em 14em, 2em 14em, 2em 13em, 5em 13em, 5em 14em, 8em 14em, 8em 13em, 9em 13em, 9em 12em, 8em 12em, 8em 11em, 6em 11em, 6em 10em, 3em 10em, 3em 9em, 1em 9em, 1em 7em, 0 7em)}
+      #sa::after {content:"";position:absolute;width:1em;height:1em;box-shadow:6em 1em var(--p1), 7em 1em #fff, 8em 1em #fff, 6em 2em var(--p1), 7em 2em #fff, 8em 2em #fff, 9em 2em var(--p1), 8em 3em var(--p1), 9em 3em var(--p1), 10em 3em #fff, 10em 4em var(--p1), 2em 7em var(--p1), 4em 8em var(--p1), 5em 8em var(--p1), 6em 9em var(--p1), 7em 9em var(--p1), 8em 10em var(--p1), 2em 15em var(--p1), 4em 16em var(--p1), 5em 16em var(--p1), 6em 16em var(--p1), 7em 16em var(--p1), 8em 16em var(--p1), 10em 15em var(--p1)}
+  
+      #homepage {display:flex;position:absolute;top:22em;filter:drop-shadow(-1em 1em var(--g3));will-change:filter;z-index:1}
+      #h, #o, #m, #e, #p, #a, #g, #i {position:relative;left:1em;margin-right:2em;background:#fff}
+      
+      #h {top:0em;width:20em;height:23em;clip-path:polygon(0 0, 9em 0, 9em 6em, 11em 6em, 11em 0, 20em 0,20em 23em, 11em 23em, 11em 16em, 9em 16em, 9em 23em, 0 23em)}
+      #h::before, #h::after {content:"";position:absolute}
+      #h::before {left:1em;width:100%;height:100%;background:linear-gradient(to bottom, var(--t) 9em, var(--g3) 9em, var(--g3) 11em, var(--g2) 11em, var(--g2) 12em, var(--g3) 12em, var(--g3) 13em, var(--g2) 13em, var(--g2) 15em, var(--t) 15em, var(--t) 17em, var(--g2) 17em, var(--g2) 18em, var(--t) 18em);clip-path:polygon(0 0, 9em 0, 9em 6em, 11em 6em, 11em 0, 18em 0, 18em 23em, 11em 23em, 11em 16em, 7em 16em, 7em 23em, 0 23em)}
+      #h::after {width:1em;height:1em;box-shadow:1em 8em var(--g3), 18em 8em var(--g3)}
+      
+      #o {top:4em;width:15em;height:16em;clip-path:polygon(0 0, 15em 0, 15em 16em, 0 16em)}
+      #o::before, #o::after {content:"";position:absolute}
+      #o::before {left:1em;width:100%;height:100%;background:linear-gradient(to bottom, var(--t) 5em, var(--g3) 5em, var(--g3) 7em, var(--g2) 7em, var(--g2) 8em, var(--g3) 8em, var(--g3) 9em, var(--g2) 9em, var(--g2) 11em, var(--t) 11em, var(--t) 13em, var(--g2) 13em, var(--g2) 14em, var(--t) 14em);clip-path:polygon(0 0, 13em 0, 13em 18em, 0 18em)}
+      #o::after {width:1em;height:1em;box-shadow:1em 4em var(--g3), 13em 4em var(--g3)}
+      
+      #m {top:6em;width:22em;height:17em;clip-path:polygon(0 0, 22em 0, 22em 17em, 16em 17em, 16em 9em, 14em 9em, 14em 17em, 8em 17em, 8em 9em, 6em 9em, 6em 17em, 0 17em)}
+      #m::before, #m::after {content:"";position:absolute}
+      #m::before {left:1em;width:100%;height:100%;background:linear-gradient(to bottom, var(--t) 3em, var(--g3) 3em, var(--g3) 5em, var(--g2) 5em, var(--g2) 6em, var(--g3) 6em, var(--g3) 7em, var(--g2) 7em, var(--g2) 9em, var(--t) 9em, var(--t) 11em, var(--g2) 11em, var(--g2) 12em, var(--t) 12em);clip-path:polygon(0 0em, 20em 0em, 20em 15em, 16em 15em, 16em 8em, 12em 8em, 12em 15em, 8em 15em, 8em 8em, 4em 8em, 4em 15em, 0 15em)}
+      #m::after {width:1em;height:1em;box-shadow:1em 2em var(--g3), 20em 2em var(--g3)}
+      
+      #e {top:3em;width:15em;height:18em;clip-path:polygon(0 0, 15em 0, 15em 10em, 8em 10em, 8em 12em, 15em 12em, 15em 18em, 0 18em)}
+      #e::before, #e::after {content:"";position:absolute}
+      #e::before {left:1em;width:100%;height:100%;background:linear-gradient(to bottom, var(--t) 6em, var(--g3) 6em, var(--g3) 8em, var(--g2) 8em, var(--g2) 9em, var(--g3) 9em, var(--g3) 10em, var(--g2) 10em, var(--g2) 12em, var(--t) 12em, var(--t) 14em, var(--g2) 14em, var(--g2) 15em, var(--t) 15em);clip-path:polygon(0 0, 13em 0, 13em 9em, 6em 9em, 6em 13em, 13em 13em, 13em 15em, 0 15em)}
+      #e::after {width:1em;height:1em;box-shadow:1em 5em var(--g3), 13em 5em var(--g3)}
+      
+      #p {top:4em;width:15em;height:22em;clip-path:polygon(0 0, 15em 0, 15em 10em, 15em 14em, 6em 14em, 6em 22em, 0em 22em)}
+      #p::before, #p::after {content:"";position:absolute}
+      #p::before {left:1em;width:100%;height:100%;background:linear-gradient(to bottom, var(--t) 5em, var(--g3) 5em, var(--g3) 7em, var(--g2) 7em, var(--g2) 8em, var(--g3) 8em, var(--g3) 9em, var(--g2) 9em, var(--g2) 11em, var(--t) 11em, var(--t) 13em, var(--g2) 13em, var(--g2) 14em, var(--t) 14em);clip-path:polygon(0 0, 13em 0, 13em 6em, 13em 11em, 4em 11em, 4em 18em, 0em 18em)}
+      #p::after {width:1em;height:1em;box-shadow:1em 4em var(--g3), 13em 4em var(--g3)}
+      
+      #a {top:6em;width:17em;height:17em;clip-path:polygon(0 0, 17em 0, 17em 17em, 11em 17em, 11em 13em, 9em 13em, 9em 17em, 0em 17em)}
+      #a::before, #a::after {content:"";position:absolute}
+      #a::before {left:1em;width:100%;height:100%;background:linear-gradient(to bottom, var(--t) 3em, var(--g3) 3em, var(--g3) 5em, var(--g2) 5em, var(--g2) 6em, var(--g3) 6em, var(--g3) 7em, var(--g2) 7em, var(--g2) 9em, var(--t) 9em, var(--t) 11em, var(--g2) 11em, var(--g2) 12em, var(--t) 12em);clip-path:polygon(0 0, 15em 0, 15em 18em, 0em 18em)}
+      #a::after {width:1em;height:1em;box-shadow:1em 2em var(--g3), 15em 2em var(--g3)}
+      
+      #g {top:5em;width:17em;height:24em;clip-path:polygon(0 0, 17em 0, 17em 24em, 0em 24em, 0em 18em, 10em 18em, 10em 16em, 0em 16em)}
+      #g::before, #g::after {content:"";position:absolute}
+      #g::before {left:1em;width:100%;height:100%;background:linear-gradient(to bottom, var(--t) 4em, var(--g3) 4em, var(--g3) 6em, var(--g2) 6em, var(--g2) 7em, var(--g3) 7em, var(--g3) 8em, var(--g2) 8em, var(--g2) 10em, var(--t) 10em, var(--t) 12em, var(--g2) 12em, var(--g2) 13em, var(--t) 13em);clip-path:polygon(0 0, 15em 0, 15em 18em, 0em 18em)}
+      #g::after {width:1em;height:1em;box-shadow:1em 3em var(--g3), 15em 3em var(--g3)}
+      
+      #i {top:4em;width:15em;height:19em;clip-path:polygon(0 0, 15em 0, 15em 12em, 10em 12em, 10em 14em, 15em 14em, 15em 19em, 0em 19em)}
+      #i::before, #i::after {content:"";position:absolute}
+      #i::before {left:1em;width:100%;height:100%;background:linear-gradient(to bottom, var(--t) 5em, var(--g3) 5em, var(--g3) 7em, var(--g2) 7em, var(--g2) 8em, var(--g3) 8em, var(--g3) 9em, var(--g2) 9em, var(--g2) 11em, var(--t) 11em, var(--t) 13em, var(--g2) 13em, var(--g2) 14em, var(--t) 14em);clip-path:polygon(0 0, 13em 0, 13em 11em, 8em 11em, 8em 14em, 0em 15em)}
+      #i::after {width:1em;height:1em;box-shadow:1em 4em var(--g3), 13em 4em var(--g3)}
+  
+      #start {display:flex;position:absolute;top:-5em;width:62em;height:9em}
+      #start::after {content:"";animation:start 1s infinite}
+      @keyframes start {0%, 50% {width:1em;height:1em;box-shadow:1em 1em #fff, 12em 1em #fff, 13em 1em #fff, 14em 1em #fff, 15em 1em #fff, 16em 1em #fff, 19em 1em #fff, 20em 1em #fff, 21em 1em #fff, 22em 1em #fff, 23em 1em #fff, 24em 1em #fff, 28em 1em #fff, 29em 1em #fff, 30em 1em #fff, 31em 1em #fff, 32em 1em #fff, 35em 1em #fff, 36em 1em #fff, 37em 1em #fff, 38em 1em #fff, 39em 1em #fff, 40em 1em #fff, 43em 1em #fff, 44em 1em #fff, 45em 1em #fff, 46em 1em #fff, 47em 1em #fff, 48em 1em #fff, 1em 2em #fff, 2em 2em #fff, 11em 2em #fff, 12em 2em #fff, 16em 2em #fff, 17em 2em #fff, 21em 2em #fff, 22em 2em #fff, 27em 2em #fff, 28em 2em #fff, 32em 2em #fff, 33em 2em #fff, 35em 2em #fff, 36em 2em #fff, 40em 2em #fff, 41em 2em #fff, 45em 2em #fff, 46em 2em #fff, 1em 3em #fff, 2em 3em #fff, 3em 3em #fff, 11em 3em #fff, 12em 3em #fff, 21em 3em #fff, 22em 3em #fff, 27em 3em #fff, 28em 3em #fff, 32em 3em #fff, 33em 3em #fff, 35em 3em #fff, 36em 3em #fff, 40em 3em #fff, 41em 3em #fff, 45em 3em #fff, 46em 3em #fff, 1em 4em #fff, 2em 4em #fff, 3em 4em #fff, 4em 4em #fff, 12em 4em #fff, 13em 4em #fff, 14em 4em #fff, 15em 4em #fff, 16em 4em #fff, 21em 4em #fff, 22em 4em #fff, 27em 4em #fff, 28em 4em #fff, 32em 4em #fff, 33em 4em #fff, 35em 4em #fff, 36em 4em #fff, 40em 4em #fff, 41em 4em #fff, 45em 4em #fff, 46em 4em #fff, 1em 5em #fff, 2em 5em #fff, 3em 5em #fff, 16em 5em #fff, 17em 5em #fff, 21em 5em #fff, 22em 5em #fff, 27em 5em #fff, 28em 5em #fff, 29em 5em #fff, 30em 5em #fff, 31em 5em #fff, 32em 5em #fff, 33em 5em #fff, 35em 5em #fff, 36em 5em #fff, 37em 5em #fff, 38em 5em #fff, 39em 5em #fff, 40em 5em #fff, 45em 5em #fff, 46em 5em #fff, 1em 6em #fff, 2em 6em #fff, 11em 6em #fff, 12em 6em #fff, 16em 6em #fff, 17em 6em #fff, 21em 6em #fff, 22em 6em #fff, 27em 6em #fff, 28em 6em #fff, 32em 6em #fff, 33em 6em #fff, 35em 6em #fff, 36em 6em #fff, 39em 6em #fff, 40em 6em #fff, 45em 6em #fff, 46em 6em #fff, 1em 7em #fff, 12em 7em #fff, 13em 7em #fff, 14em 7em #fff, 15em 7em #fff, 16em 7em #fff, 21em 7em #fff, 22em 7em #fff, 27em 7em #fff, 28em 7em #fff, 32em 7em #fff, 33em 7em #fff, 35em 7em #fff, 36em 7em #fff, 40em 7em #fff, 41em 7em #fff, 45em 7em #fff, 46em 7em #fff} 50.01%, 100% {width:1em;height:1em;box-shadow:12em 1em #fff, 13em 1em #fff, 14em 1em #fff, 15em 1em #fff, 16em 1em #fff, 19em 1em #fff, 20em 1em #fff, 21em 1em #fff, 22em 1em #fff, 23em 1em #fff, 24em 1em #fff, 28em 1em #fff, 29em 1em #fff, 30em 1em #fff, 31em 1em #fff, 32em 1em #fff, 35em 1em #fff, 36em 1em #fff, 37em 1em #fff, 38em 1em #fff, 39em 1em #fff, 40em 1em #fff, 43em 1em #fff, 44em 1em #fff, 45em 1em #fff, 46em 1em #fff, 47em 1em #fff, 48em 1em #fff, 11em 2em #fff, 12em 2em #fff, 16em 2em #fff, 17em 2em #fff, 21em 2em #fff, 22em 2em #fff, 27em 2em #fff, 28em 2em #fff, 32em 2em #fff, 33em 2em #fff, 35em 2em #fff, 36em 2em #fff, 40em 2em #fff, 41em 2em #fff, 45em 2em #fff, 46em 2em #fff, 11em 3em #fff, 12em 3em #fff, 21em 3em #fff, 22em 3em #fff, 27em 3em #fff, 28em 3em #fff, 32em 3em #fff, 33em 3em #fff, 35em 3em #fff, 36em 3em #fff, 40em 3em #fff, 41em 3em #fff, 45em 3em #fff, 46em 3em #fff, 12em 4em #fff, 13em 4em #fff, 14em 4em #fff, 15em 4em #fff, 16em 4em #fff, 21em 4em #fff, 22em 4em #fff, 27em 4em #fff, 28em 4em #fff, 32em 4em #fff, 33em 4em #fff, 35em 4em #fff, 36em 4em #fff, 40em 4em #fff, 41em 4em #fff, 45em 4em #fff, 46em 4em #fff, 16em 5em #fff, 17em 5em #fff, 21em 5em #fff, 22em 5em #fff, 27em 5em #fff, 28em 5em #fff, 29em 5em #fff, 30em 5em #fff, 31em 5em #fff, 32em 5em #fff, 33em 5em #fff, 35em 5em #fff, 36em 5em #fff, 37em 5em #fff, 38em 5em #fff, 39em 5em #fff, 40em 5em #fff, 45em 5em #fff, 46em 5em #fff, 11em 6em #fff, 12em 6em #fff, 16em 6em #fff, 17em 6em #fff, 21em 6em #fff, 22em 6em #fff, 27em 6em #fff, 28em 6em #fff, 32em 6em #fff, 33em 6em #fff, 35em 6em #fff, 36em 6em #fff, 39em 6em #fff, 40em 6em #fff, 45em 6em #fff, 46em 6em #fff, 12em 7em #fff, 13em 7em #fff, 14em 7em #fff, 15em 7em #fff, 16em 7em #fff, 21em 7em #fff, 22em 7em #fff, 27em 7em #fff, 28em 7em #fff, 32em 7em #fff, 33em 7em #fff, 35em 7em #fff, 36em 7em #fff, 40em 7em #fff, 41em 7em #fff, 45em 7em #fff, 46em 7em #fff}}
+  
+      #elle {display:flex;position:absolute;top:20em;width:20em;height:22em}
+      #elle::after {content:"";animation:elle 0.3s infinite}
+      @keyframes elle {0%, 50% {width:1em;height:1em;box-shadow:6em 1em var(--p3), 7em 1em var(--p3), 13em 1em var(--p3), 14em 1em var(--p3), 6em 2em var(--p3), 7em 2em #fff, 8em 2em var(--p3), 9em 2em var(--p3), 10em 2em var(--p3), 11em 2em var(--p3), 12em 2em var(--p3), 13em 2em #fff, 14em 2em var(--p3), 6em 3em var(--p3), 7em 3em #fff, 8em 3em var(--p3), 9em 3em var(--p3), 10em 3em var(--p3), 11em 3em var(--p3), 12em 3em var(--p3), 13em 3em var(--p3), 14em 3em var(--p3), 5em 4em var(--p3), 6em 4em var(--p3), 7em 4em var(--p3), 8em 4em var(--p3), 9em 4em var(--p3), 10em 4em var(--p3), 11em 4em var(--p3), 12em 4em var(--p3), 13em 4em var(--p3), 14em 4em var(--p3), 15em 4em var(--p3), 5em 5em var(--p3), 6em 5em var(--p3), 7em 5em var(--p3), 8em 5em var(--p3), 9em 5em var(--p3), 10em 5em var(--p3), 11em 5em var(--p3), 12em 5em var(--p3), 13em 5em var(--p3), 14em 5em var(--p3), 15em 5em var(--p3), 16em 5em var(--p3), 4em 6em var(--p3), 5em 6em var(--p3), 6em 6em var(--p3), 7em 6em var(--p3), 8em 6em var(--p3), 9em 6em var(--p3), 10em 6em var(--p3), 11em 6em var(--p3), 12em 6em var(--p3), 13em 6em #fffafa, 14em 6em var(--p3), 15em 6em var(--p3), 16em 6em var(--p3), 4em 7em var(--p3), 5em 7em var(--p3), 6em 7em var(--p3), 7em 7em var(--p3), 8em 7em var(--p3), 9em 7em var(--p3), 10em 7em var(--p3), 11em 7em var(--p3), 12em 7em #fffafa, 13em 7em #fffafa, 14em 7em var(--p3), 15em 7em var(--p3), 16em 7em var(--p3), 4em 8em var(--p3), 5em 8em var(--p3), 6em 8em var(--p3), 7em 8em var(--p3), 8em 8em var(--p3), 9em 8em #fffafa, 10em 8em var(--p3), 11em 8em #fffafa, 12em 8em #fffafa, 13em 8em var(--p3), 14em 8em #fffafa, 15em 8em var(--p3), 16em 8em var(--p3), 3em 9em var(--p3), 4em 9em var(--p3), 5em 9em var(--p3), 6em 9em var(--p3), 7em 9em var(--p3), 8em 9em #fffafa, 9em 9em #fffafa, 10em 9em var(--p3), 11em 9em #fffafa, 12em 9em #fffafa, 13em 9em var(--p3), 14em 9em #fffafa, 15em 9em var(--p3), 1em 10em var(--p3), 2em 10em var(--p3), 3em 10em var(--p3), 4em 10em var(--p3), 5em 10em var(--p3), 6em 10em var(--p3), 7em 10em var(--p3), 8em 10em #fffafa, 9em 10em #fffafa, 10em 10em #fffafa, 11em 10em #fffafa, 12em 10em #fffafa, 13em 10em #fffafa, 14em 10em #fffafa, 15em 10em var(--p3), 2em 11em var(--p3), 3em 11em var(--p3), 4em 11em var(--p3), 5em 11em var(--p3), 6em 11em var(--p3), 7em 11em var(--p3), 8em 11em var(--p3), 9em 11em #fffafa, 10em 11em #fffafa, 11em 11em #fffafa, 12em 11em #fffafa, 13em 11em #fffafa, 14em 11em var(--p3), 15em 11em var(--p3), 4em 12em var(--p3), 5em 12em var(--p3), 6em 12em var(--p3), 7em 12em var(--p3), 8em 12em var(--p3), 9em 12em var(--p3), 10em 12em #fffafa, 11em 12em #fffafa, 12em 12em var(--p3), 13em 12em var(--p3), 14em 12em var(--p3), 6em 13em var(--p3), 7em 13em var(--p3), 8em 13em #fff, 9em 13em #fff, 10em 13em var(--p3), 11em 13em #fff, 12em 13em #fff, 13em 13em var(--p3), 7em 14em var(--p3), 8em 14em #fff, 9em 14em #fffafa, 10em 14em #fffafa, 11em 14em var(--p3), 12em 14em var(--p3), 13em 14em var(--p3), 14em 14em var(--p3), 6em 15em var(--p3), 7em 15em var(--p3), 8em 15em var(--p3), 9em 15em #fffafa, 10em 15em #fffafa, 11em 15em var(--p3), 12em 15em var(--p3), 13em 15em var(--p3), 14em 15em var(--p3), 15em 15em var(--p3), 5em 16em #fffafa, 6em 16em var(--p3), 7em 16em var(--p3), 8em 16em var(--p3), 9em 16em var(--p3), 10em 16em var(--p3), 11em 16em var(--p3), 12em 16em var(--p3), 13em 16em var(--p3), 14em 16em #fffafa, 15em 16em #fffafa, 16em 16em #fffafa, 5em 17em #fffafa, 6em 17em #fffafa, 7em 17em #fffafa, 13em 17em #fffafa, 14em 17em #fffafa, 15em 17em #fffafa, 5em 18em #fffafa, 6em 18em #fffafa, 14em 18em #fffafa, 6em 20em var(--p3), 7em 20em var(--p3), 8em 20em var(--p3), 9em 20em var(--p3), 10em 20em var(--p3), 11em 20em var(--p3), 12em 20em var(--p3), 13em 20em var(--p3), 14em 20em var(--p3), 15em 20em var(--p3)}50.01%, 100%{width:1em;height:1em;box-shadow:6em 2em var(--p3), 7em 2em var(--p3), 13em 2em var(--p3), 14em 2em var(--p3), 6em 3em var(--p3), 7em 3em #fff, 8em 3em var(--p3), 9em 3em var(--p3), 10em 3em var(--p3), 11em 3em var(--p3), 12em 3em var(--p3), 13em 3em #fff, 14em 3em var(--p3), 6em 4em var(--p3), 7em 4em #fff, 8em 4em var(--p3), 9em 4em var(--p3), 10em 4em var(--p3), 11em 4em var(--p3), 12em 4em var(--p3), 13em 4em var(--p3), 14em 4em var(--p3), 5em 5em var(--p3), 6em 5em var(--p3), 7em 5em var(--p3), 8em 5em var(--p3), 9em 5em var(--p3), 10em 5em var(--p3), 11em 5em var(--p3), 12em 5em var(--p3), 13em 5em var(--p3), 14em 5em var(--p3), 15em 5em var(--p3), 5em 6em var(--p3), 6em 6em var(--p3), 7em 6em var(--p3), 8em 6em var(--p3), 9em 6em var(--p3), 10em 6em var(--p3), 11em 6em var(--p3), 12em 6em var(--p3), 13em 6em var(--p3), 14em 6em var(--p3), 15em 6em var(--p3), 16em 6em var(--p3), 4em 7em var(--p3), 5em 7em var(--p3), 6em 7em var(--p3), 7em 7em var(--p3), 8em 7em var(--p3), 9em 7em var(--p3), 10em 7em var(--p3), 11em 7em var(--p3), 12em 7em var(--p3), 13em 7em #fffafa, 14em 7em var(--p3), 15em 7em var(--p3), 16em 7em var(--p3), 4em 8em var(--p3), 5em 8em var(--p3), 6em 8em var(--p3), 7em 8em var(--p3), 8em 8em var(--p3), 9em 8em var(--p3), 10em 8em var(--p3), 11em 8em var(--p3), 12em 8em #fffafa, 13em 8em #fffafa, 14em 8em var(--p3), 15em 8em var(--p3), 16em 8em var(--p3), 2em 9em var(--p3), 4em 9em var(--p3), 5em 9em var(--p3), 6em 9em var(--p3), 7em 9em var(--p3), 8em 9em var(--p3), 9em 9em #fffafa, 10em 9em var(--p3), 11em 9em #fffafa, 12em 9em #fffafa, 13em 9em var(--p3), 14em 9em #fffafa, 15em 9em var(--p3), 16em 9em var(--p3), 2em 10em var(--p3), 3em 10em var(--p3), 4em 10em var(--p3), 5em 10em var(--p3), 6em 10em var(--p3), 7em 10em var(--p3), 8em 10em #fffafa, 9em 10em #fffafa, 10em 10em var(--p3), 11em 10em #fffafa, 12em 10em #fffafa, 13em 10em var(--p3), 14em 10em #fffafa, 15em 10em var(--p3), 2em 11em var(--p3), 3em 11em var(--p3), 4em 11em var(--p3), 5em 11em var(--p3), 6em 11em var(--p3), 7em 11em var(--p3), 8em 11em #fffafa, 9em 11em #fffafa, 10em 11em #fffafa, 11em 11em #fffafa, 12em 11em #fffafa, 13em 11em #fffafa, 14em 11em #fffafa, 15em 11em var(--p3), 3em 12em var(--p3), 4em 12em var(--p3), 5em 12em var(--p3), 6em 12em var(--p3), 7em 12em var(--p3), 8em 12em var(--p3), 9em 12em #fffafa, 10em 12em #fffafa, 11em 12em #fffafa, 12em 12em #fffafa, 13em 12em #fffafa, 14em 12em var(--p3), 15em 12em var(--p3), 4em 13em var(--p3), 5em 13em var(--p3), 6em 13em var(--p3), 7em 13em var(--p3), 8em 13em var(--p3), 9em 13em var(--p3), 10em 13em #fffafa, 11em 13em #fffafa, 12em 13em var(--p3), 13em 13em var(--p3), 14em 13em var(--p3), 6em 14em var(--p3), 7em 14em #fff, 8em 14em #fff, 9em 14em var(--p3), 10em 14em #fff, 11em 14em #fff, 12em 14em var(--p3), 13em 14em #fff, 5em 15em #fffafa, 6em 15em #fffafa, 7em 15em #fff, 8em 15em #fff, 9em 15em var(--p3), 10em 15em var(--p3), 11em 15em var(--p3), 12em 15em var(--p3), 13em 15em #fff, 14em 15em #fff, 5em 16em #fffafa, 6em 16em #fffafa, 7em 16em var(--p3), 8em 16em var(--p3), 9em 16em var(--p3), 10em 16em var(--p3), 11em 16em var(--p3), 12em 16em var(--p3), 13em 16em var(--p3), 14em 16em #fffafa, 6em 17em var(--p3), 7em 17em var(--p3), 8em 17em var(--p3), 9em 17em var(--p3), 10em 17em #fffafa, 11em 17em #fffafa, 12em 17em #fffafa, 13em 17em var(--p3), 7em 18em #fffafa, 8em 18em #fffafa, 9em 18em #fffafa, 10em 18em #fffafa, 11em 18em #fffafa, 12em 18em #fffafa, 7em 19em #fffafa, 8em 19em #fffafa, 10em 19em #fffafa, 11em 19em #fffafa, 8em 20em var(--p3), 9em 20em var(--p3), 10em 20em var(--p3), 11em 20em var(--p3), 12em 20em var(--p3), 13em 20em var(--p3)}}
+  
+      #email {display:flex;position:absolute;top:70em;width:103em;height:9em}
+      #email::after {content:"";width:1em;height:1em;box-shadow:1em 1em #fff, 2em 1em #fff, 6em 1em #fff, 7em 1em #fff, 11em 1em #fff, 12em 1em #fff, 19em 1em #fff, 20em 1em #fff, 21em 1em #fff, 25em 1em #fff, 26em 1em #fff, 27em 1em #fff, 28em 1em #fff, 29em 1em #fff, 30em 1em #fff, 31em 1em #fff,33em 1em #fff, 34em 1em #fff, 41em 1em #fff, 42em 1em #fff, 49em 1em #fff, 50em 1em #fff, 51em 1em #fff, 52em 1em #fff, 53em 1em #fff, 54em 1em #fff, 55em 1em #fff, 65em 1em #fff, 66em 1em #fff, 67em 1em #fff, 68em 1em #fff, 69em 1em #fff, 70em 1em #fff, 71em 1em #fff, 73em 1em #fff, 74em 1em #fff, 78em 1em #fff, 79em 1em #fff, 82em 1em #fff, 83em 1em #fff, 84em 1em #fff, 85em 1em #fff, 86em 1em #fff, 90em 1em #fff, 91em 1em #fff, 96em 1em #fff, 97em 1em #fff, 1em 2em #fff, 2em 2em #fff, 6em 2em #fff, 7em 2em #fff, 11em 2em #fff, 12em 2em #fff, 18em 2em #fff, 22em 2em #fff, 25em 2em #fff, 26em 2em #fff, 33em 2em #fff, 34em 2em #fff, 41em 2em #fff, 42em 2em #fff, 49em 2em #fff, 50em 2em #fff, 65em 2em #fff, 66em 2em #fff, 73em 2em #fff, 74em 2em #fff, 75em 2em #fff, 77em 2em #fff, 78em 2em #fff, 79em 2em #fff, 81em 2em #fff, 82em 2em #fff, 86em 2em #fff, 87em 2em #fff, 90em 2em #fff, 91em 2em #fff, 96em 2em #fff, 97em 2em #fff, 1em 3em #fff, 2em 3em #fff, 6em 3em #fff, 7em 3em #fff, 11em 3em #fff, 12em 3em #fff, 17em 3em #fff, 20em 3em #fff, 21em 3em #fff, 23em 3em #fff, 25em 3em #fff, 26em 3em #fff, 33em 3em #fff, 34em 3em #fff, 41em 3em #fff, 42em 3em #fff, 49em 3em #fff, 50em 3em #fff, 65em 3em #fff, 66em 3em #fff, 73em 3em #fff, 74em 3em #fff, 75em 3em #fff, 76em 3em #fff, 77em 3em #fff, 78em 3em #fff, 79em 3em #fff, 81em 3em #fff, 82em 3em #fff, 86em 3em #fff, 87em 3em #fff, 90em 3em #fff, 91em 3em #fff, 96em 3em #fff, 97em 3em #fff, 1em 4em #fff, 2em 4em #fff, 6em 4em #fff, 7em 4em #fff, 11em 4em #fff, 12em 4em #fff, 17em 4em #fff, 19em 4em #fff, 21em 4em #fff, 23em 4em #fff, 25em 4em #fff, 26em 4em #fff, 27em 4em #fff, 28em 4em #fff, 29em 4em #fff, 30em 4em #fff, 33em 4em #fff, 34em 4em #fff, 41em 4em #fff, 42em 4em #fff, 49em 4em #fff, 50em 4em #fff, 51em 4em #fff, 52em 4em #fff, 53em 4em #fff, 54em 4em #fff, 65em 4em #fff, 66em 4em #fff, 67em 4em #fff, 68em 4em #fff, 69em 4em #fff, 70em 4em #fff, 73em 4em #fff, 74em 4em #fff, 76em 4em #fff, 78em 4em #fff, 79em 4em #fff, 81em 4em #fff, 82em 4em #fff, 86em 4em #fff, 87em 4em #fff, 90em 4em #fff, 91em 4em #fff, 96em 4em #fff, 97em 4em #fff, 1em 5em #fff, 2em 5em #fff, 3em 5em #fff, 4em 5em #fff, 5em 5em #fff, 6em 5em #fff, 7em 5em #fff, 11em 5em #fff, 12em 5em #fff, 17em 5em #fff, 20em 5em #fff, 22em 5em #fff, 25em 5em #fff, 26em 5em #fff, 33em 5em #fff, 34em 5em #fff, 41em 5em #fff, 42em 5em #fff, 49em 5em #fff, 50em 5em #fff, 65em 5em #fff, 66em 5em #fff, 73em 5em #fff, 74em 5em #fff, 78em 5em #fff, 79em 5em #fff, 81em 5em #fff, 82em 5em #fff, 83em 5em #fff, 84em 5em #fff, 85em 5em #fff, 86em 5em #fff, 87em 5em #fff, 90em 5em #fff, 91em 5em #fff, 96em 5em #fff, 97em 5em #fff, 1em 6em #fff, 2em 6em #fff, 6em 6em #fff, 7em 6em #fff, 11em 6em #fff, 12em 6em #fff, 18em 6em #fff, 25em 6em #fff, 26em 6em #fff, 33em 6em #fff, 34em 6em #fff, 41em 6em #fff, 42em 6em #fff, 49em 6em #fff, 50em 6em #fff, 58em 6em #fff, 59em 6em #fff, 65em 6em #fff, 66em 6em #fff, 73em 6em #fff, 74em 6em #fff, 78em 6em #fff, 79em 6em #fff, 81em 6em #fff, 82em 6em #fff, 86em 6em #fff, 87em 6em #fff, 90em 6em #fff, 91em 6em #fff, 96em 6em #fff, 97em 6em #fff, 1em 7em #fff, 2em 7em #fff, 6em 7em #fff, 7em 7em #fff, 11em 7em #fff, 12em 7em #fff, 19em 7em #fff, 20em 7em #fff, 21em 7em #fff, 25em 7em #fff, 26em 7em #fff, 27em 7em #fff, 28em 7em #fff, 29em 7em #fff, 30em 7em #fff, 31em 7em #fff, 33em 7em #fff, 34em 7em #fff, 35em 7em #fff, 36em 7em #fff, 37em 7em #fff, 38em 7em #fff, 41em 7em #fff, 42em 7em #fff, 43em 7em #fff, 44em 7em #fff, 45em 7em #fff, 46em 7em #fff, 49em 7em #fff, 50em 7em #fff, 51em 7em #fff, 52em 7em #fff, 53em 7em #fff, 54em 7em #fff, 55em 7em #fff, 58em 7em #fff, 59em 7em #fff, 65em 7em #fff, 66em 7em #fff, 67em 7em #fff, 68em 7em #fff, 69em 7em #fff, 70em 7em #fff, 71em 7em #fff, 73em 7em #fff, 74em 7em #fff, 78em 7em #fff, 79em 7em #fff, 81em 7em #fff, 82em 7em #fff, 86em 7em #fff, 87em 7em #fff, 90em 7em #fff, 91em 7em #fff, 96em 7em #fff, 97em 7em #fff, 98em 7em #fff, 99em 7em #fff, 100em 7em #fff, 101em 7em #fff}
+  
+      @media (prefers-color-scheme:dark) {
+        body {background:#2f2a35} 
+        .sky {width:14em;height:14em;clip-path:polygon(0 5em, 6em 5em, 6em 2em, 7em 2em, 7em 0, 8em 0, 8em 2em, 9em 2em, 9em 4em, 14em 4em, 14em 5em, 13em 5em, 13em 6em, 12em 6em, 12em 7em, 11em 7em, 11em 9em, 12em 9em, 12em 11em, 13em 11em, 13em 13em, 12em 13em, 12em 12em, 10em 12em, 10em 11em, 7em 11em, 7em 12em, 6em 12em, 6em 13em, 5em 13em, 5em 14em, 4em 14em, 4em 9em, 3em 9em, 3em 8em, 2em 8em, 2em 7em, 1em 7em, 1em 6em, 0 6em)}
+      }
+    </style>
+  </head>
+  <body class="center"><a href="https://ellesho.me/cdn-cgi/content?id=Nrr5Zgw8K5tlGKAc9tfe4TvYRopNAEGtb1Xln03rqC8-1780864507.9684713-1.2.1.1-syEFyfhicf7YzlSS0Av84aUCPmN_d5Frxyoyu82CUEQ" aria-hidden="true" rel="nofollow noopener" style="display: none !important; visibility: hidden !important"></a>
+    <main class="center" id="screen">
+      <div class="sky" id="skya"></div>
+      <div class="sky" id="skyb"></div>
+      <div class="sky" id="skyc"></div>
+      <header class="center" aria-label="elle's homepage title">
+        <div id="elles"><div id="ea"></div><div id="la"></div><div id="lb"></div><div id="eb"></div><div id="aa"></div><div id="sa"></div></div>
+        <div id="homepage"><div id="h"></div><div id="o"></div><div id="m"></div><div id="e"></div><div id="p"></div><div id="a"></div><div id="g"></div><div id="i"></div></div>
+      </header>
+      <a id="start" href="https://ellesho.me/page" aria-label="continue to elle's homepage"></a>
+      <figure id="elle" aria-label="side scrolling pixel elle running"></figure>
+      <footer id="email" aria-label="elle's email address: hi at elle dot email"></footer>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="alternate icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Asap|Nunito:400,600,700,800,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="global.css">
+  <link rel="stylesheet" href="style.css">
+  <title>David Zavala | IT & Prototyping</title>
+</head>
+
+<body class="home">
+  <section class="hero">
+
+    <nav class="nav" id="main-nav">
+      <div class="nav__container container">
+        <a class="logo" href="/"><img src="assets/sprites/sprite-placeholder.svg" class="nav-sprite"></a>
+        <div class="nav__link-container">
+        </div>
+      </div>
+    </nav>
+
+    <img src="images/hero.jpg" class="hero__image" alt="hero — coming soon">
+
+    <div class="hero__container container polka-dot-bg">
+      <h1 class="hero__text polka-dot-bg">
+        <span class="emoji">👋</span>
+        <span class="emoji-placeholder">👋</span>
+        <span class="hero__line">Hi, I'm
+          <a href="#about" class="hero__highlight-1">David Zavala</a>.
+        </span><br>
+        <span class="hero__line">I'm currently learning more about
+        everything the world of programming has to offer.</span>
+      </h1>
+      <div class="hero__actions">
+        <a class="hero__button button" href="#contact">Contact Me</a>
+        <a class="nav__link caps" href="#about">About</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+
+    <div id="hydroponic-iot" class="project pinstripe-bg-315">
+      <div class="container">
+        <div class="box project-info">
+          <h2 class="project-title">Hydroponic IoT System</h2>
+          <div class="project-subtitle caps">Embedded Systems · IoT · Automation</div>
+          <div class="skills">
+            <ul class="skill-list">
+              <li class="skill">Raspberry Pi 5</li>
+              <li class="skill">MicroPython</li>
+              <li class="skill">MQTT</li>
+              <li class="skill">Node-RED</li>
+              <li class="skill">ESP8266</li>
+              <li class="skill">DHT22</li>
+              <li class="skill">MOSFET</li>
+              <li class="skill">Linux</li>
+            </ul>
+          </div>
+          <div class="project-description">
+            <p>The idea for this project arose after gaining deep interest in microelectronics and some unfortunate plants dying at my hands. The aim is to build an end-to-end IoT hydroponic plant monitoring system built on Raspberry Pi 5. Sensors feed live data via MQTT to a Node-RED dashboard, with automated pump and LED control through MOSFET modules and relay boards.</p>
+          </div>
+        </div>
+        <div class="box screen">
+          <img src="images/hydroponic-1.jpg" class="lightbox-image" alt="Hydroponic IoT System 1">
+        </div>
+        <div class="box screen">
+          <img src="images/hydroponic-2.jpg" class="lightbox-image" alt="Hydroponic IoT System 2">
+        </div>
+        <div class="box screen">
+          <img src="images/hydroponic-3.jpg" class="lightbox-image" alt="Hydroponic IoT System 3">
+        </div>
+        <div class="box screen">
+          <img src="images/hydroponic-4.jpg"
+               class="lightbox-image"
+               alt="Hydroponic IoT System">
+        </div>
+      </div>
+    </div>
+
+    <div id="home-server" class="project pinstripe-bg-45">
+      <div class="container">
+        <div class="box project-info">
+          <h2 class="project-title">Home Server / Self-Hosted Infrastructure</h2>
+          <div class="project-subtitle caps">Linux Administration · Self-Hosting · Networking</div>
+          <div class="skills">
+            <ul class="skill-list">
+              <li class="skill">Raspberry Pi</li>
+              <li class="skill">Linux</li>
+              <li class="skill">Pi-hole</li>
+              <li class="skill">Nextcloud</li>
+              <li class="skill">Nginx</li>
+              <li class="skill">SSH</li>
+              <li class="skill">DNS</li>
+              <li class="skill">Networking</li>
+            </ul>
+          </div>
+          <div class="project-description">
+            <p>These days being on mainstream internet feels exhausting with the doomscrolls, dark algorithms, brainrot. I mainly want a personal internet where i get to choose what i want to on my computer, and replace all subcriptions and to have all my media stored, so starting to build my owm homelab seem the perfect idea.</p>
+            <p>Built on a Raspberry Pi running Pi OS Lite bare metal with a Pimoroni NVMe base for real storage. The stack covers what actually matters: Jellyfin for media, Immich for photos, Komga for ebooks and manga, Readeck for offline article archiving, Miniflux for RSS, and Livereload in a Docker container for local web development, all accessible over LAN via Nginx Proxy Manager with readable URLs instead of raw ports. Both SSDs are encrypted and a single boot script handles decryption and spins up every service at once. Borg backs the data drive to a second SSD twice a week.</p>
+          </div>
+        </div>
+        <div class="box screen">
+          <img src="images/homeserver-1.jpg"
+               class="lightbox-image"
+               alt="Home Server Setup">
+        </div>
+        <div class="box screen">
+          <img src="images/homeserver-2.jpg"
+               class="lightbox-image"
+               alt="Home Server Setup">
+        </div>
+        <div class="box screen">
+          <img src="images/home-server-3.jpg" class="lightbox-image" alt="Home Server / Self-Hosted Infrastructure 3">
+        </div>
+      </div>
+    </div>
+
+    <div id="network-monitoring" class="project pinstripe-bg-315">
+      <div class="container">
+        <div class="box project-info">
+          <h2 class="project-title">Network Monitoring Stack</h2>
+          <div class="project-subtitle caps">Observability · Infrastructure · Linux</div>
+          <div class="skills">
+            <ul class="skill-list">
+              <li class="skill">Grafana</li>
+              <li class="skill">Prometheus</li>
+              <li class="skill">Netdata</li>
+              <li class="skill">Pi-hole</li>
+              <li class="skill">Linux</li>
+              <li class="skill">Bash</li>
+              <li class="skill">Networking</li>
+            </ul>
+          </div>
+          <div class="project-description">
+            <p><strong>Project:</strong> ...</p>
+            <p><strong>Process:</strong> ...</p>
+            <p><strong>Result:</strong> ...</p>
+          </div>
+        </div>
+        <div class="box screen">
+          <img src="images/network-monitoring-1.jpg" class="lightbox-image" alt="Network Monitoring Stack 1">
+        </div>
+        <div class="box screen">
+          <img src="images/network-monitoring-2.jpg" class="lightbox-image" alt="Network Monitoring Stack 2">
+        </div>
+        <div class="box screen">
+          <img src="images/network-monitoring-3.jpg" class="lightbox-image" alt="Network Monitoring Stack 3">
+        </div>
+      </div>
+    </div>
+
+    <div id="eink-album" class="project polka-dot-bg">
+      <div class="container">
+        <div class="box project-info">
+          <h2 class="project-title">E-ink Album Display</h2>
+          <div class="project-subtitle caps">Hardware · Python · API Integration</div>
+          <div class="skills">
+            <ul class="skill-list">
+              <li class="skill">Raspberry Pi Zero 2W</li>
+              <li class="skill">Python</li>
+              <li class="skill">Spotify API</li>
+              <li class="skill">Pillow</li>
+              <li class="skill">Floyd-Steinberg Dithering</li>
+              <li class="skill">E-ink</li>
+              <li class="skill">Linux</li>
+            </ul>
+          </div>
+          <div class="project-description">
+            <p><strong>Project:</strong> A daily album discovery tool that pulls a random album from a Spotify playlist and renders it on a 7.3" Pimoroni Inky Impression e-ink display — a physical, screenless way to rediscover music without reaching for a phone.</p>
+            <p><strong>Process:</strong> Implemented the Spotify Web API via spotipy to fetch random tracks and retrieve album metadata. The main technical challenge was the display's 7-color e-ink palette — solved with Floyd-Steinberg dithering in Pillow to convert album art while preserving visual fidelity. Added QR code generation so the album opens directly in Spotify, and built an interactive playlist manager for switching between playlists. Total refresh cycle: ~15 seconds end-to-end.</p>
+            <p><strong>Result:</strong> Runs headlessly on a Pi Zero 2 W, updating once daily. The dithering implementation and smart track name matching — handling Remastered, Remix, and alternate versions — were the most technically interesting problems.</p>
+          </div>
+        </div>
+        <div class="box screen">
+          <img src="images/eink-1.jpg" class="lightbox-image" alt="E-ink Album Display 1">
+        </div>
+        <div class="box screen">
+          <img src="images/eink-2.jpg" class="lightbox-image" alt="E-ink Album Display 2">
+        </div>
+        <div class="box screen">
+          <img src="images/eink-3.jpg" class="lightbox-image" alt="E-ink Album Display 3">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="polka-dot-bg">
+    <div class="about-row">
+      <div class="container">
+        <div class="portrait">
+          <img id="myface" src="images/portrait.jpg" alt="David Zavala">
+        </div>
+        <div class="about-text">
+          <h1>About Me</h1>
+          <div>
+            <p>I'm an MSc IT student at HTW Berlin who likes deep neural networks, cloud infrastructure, and systems programming, with the goal of mastering the full stack and understanding both the software and hardware layers to build effective and scalable solutions.</p>
+            <div class="contact-capabilities">
+              <div class="contact-cap-group">
+                <div class="project-subtitle caps">Infrastructure &amp; Systems</div>
+                <ul class="contact-cap-list">
+                  <li>Linux Administration &amp; Self-Hosting</li>
+                  <li>Networking, DNS &amp; Pi-hole</li>
+                  <li>Observability — Grafana, Prometheus, Netdata</li>
+                  <li>Automation — Node-RED, Bash, Nginx</li>
+                </ul>
+              </div>
+              <div class="contact-cap-group">
+                <div class="project-subtitle caps">Embedded &amp; Hardware</div>
+                <ul class="contact-cap-list">
+                  <li>Raspberry Pi &amp; ESP8266 Development</li>
+                  <li>MicroPython &amp; Python</li>
+                  <li>Sensors &amp; IoT — MQTT, DHT22, MOSFET</li>
+                  <li>E-ink Displays &amp; API Integration</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="pinstripe-bg-45">
+    <div class="contact-form-wrap">
+      <div class="contact-info">
+        <div class="contact-row">
+          <span class="contact-label caps">Location</span>
+          <span class="contact-value">Berlin, Germany</span>
+        </div>
+        <div class="contact-row">
+          <span class="contact-label caps">Phone</span>
+          <span class="contact-value">
+            <a href="tel:+4915755287613">+4915755287613</a>
+          </span>
+        </div>
+        <div class="contact-row">
+          <span class="contact-label caps">Email</span>
+          <span class="contact-value">
+            <a href="mailto:ezavalan@hotmail.com">
+              ezavalan@hotmail.com
+            </a>
+          </span>
+        </div>
+        <div class="contact-row">
+          <span class="contact-label caps">Social</span>
+          <span class="contact-value contact-social">
+            <a href="https://linkedin.com/in/david-zavala"
+               target="_blank"
+               class="social-icon"
+               aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" width="20" height="20"
+                   fill="currentColor">
+                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2
+                         2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
+                <circle cx="4" cy="4" r="2"/>
+              </svg>
+            </a>
+            <a href="https://github.com/Tintodeverano"
+               target="_blank"
+               class="social-icon"
+               aria-label="GitHub">
+              <svg viewBox="0 0 24 24" width="20" height="20"
+                   fill="currentColor">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37
+                         3.37 0 00-.94-2.61c3.14-.35 6.44-1.54
+                         6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0
+                         0019.91 1S18.73.65 16 2.48a13.38 13.38 0
+                         00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0
+                         005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42
+                         3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/>
+              </svg>
+            </a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-copy">&copy; David Zavala 2026</span>
+      <div class="footer-nav">
+        <a class="footer-link" href="#">GitHub</a>
+        <a class="footer-link" href="#">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="lightbox" class="lightbox">
+    <span class="close-lightbox">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+    <div id="lightbox-caption"></div>
+  </div>
+
+  <script type="text/javascript" src="scripts.js"></script>
+</body>
+
+</html>
