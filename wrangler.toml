@@ -1,0 +1,8 @@
+name = "portfoliodavid"
+compatibility_date = "2026-06-08"
+assets = { directory = "./" }
+
+routes = [
+  { pattern = "davidzavala.me/*", zone_name = "davidzavala.me" },
+  { pattern = "www.davidzavala.me/*", zone_name = "davidzavala.me" }
+]

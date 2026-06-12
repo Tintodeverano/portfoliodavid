@@ -5,7 +5,7 @@
 **************************/
 :root {
   /* Sprite system — populated when pixel art is ready */
-  --sprite-nav: none;        /* nav logo sprite, base64 WebP */
+  --sprite-nav: url('data:image/webp;base64,UklGRowAAABXRUJQVlA4TIAAAAAvD8ADEDdAFmAyf7FZ9AXRlYbatm0Y/39sS1tDkG0zf51RnOEsz+c/AAD/l47d1CUFR40kOVKqGVRL+9+uNX9HwBE4R2D5szhHIaL/E8D/htbgsl1BZpYUpCTVFxlLzVZF6nado/E0XecIOU3nOYA1LesAKS0vv+XLAZYdQOvgHQ==');        /* nav logo sprite, base64 WebP */
   --sprite-hero: none;       /* hero character sprite */
   --sprite-sheet: none;      /* main sprite sheet */
 }
