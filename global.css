@@ -186,3 +186,22 @@ ol {
 .center {
   text-align: center;
 }
+
+.wip-badge {
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  background-image: url('data:image/webp;base64,UklGRrIAAABXRUJQVlA4TKYAAAAvH8AHEEdAJACh2WOUYaY4YoQ1itpIgXa5VSMMDzjACR9FbdtAVd/Fc4zE+KMYhc1/AADg33aUOl3hPOlwLzixbdtpLj3yX4f8ZQKUSWQCTaLQcej0N+/k00FH9H8CsMK6qqpqkI36uGHW2l5F/bcHSN7zoI/iUV69cP+5ZT7eRSTousyjKJLj0oO8H4gT/EpbkVPSA9rKNUHfpm3Rv0mHMGAwzc4F');
+  background-size: contain;
+  background-repeat: no-repeat;
+  image-rendering: pixelated;
+  vertical-align: middle;
+  margin-left: 8px;
+  animation: blink-wip 1s steps(1) infinite;
+}
+
+@keyframes blink-wip {
+  50% {
+    background-image: url('data:image/webp;base64,UklGRqAAAABXRUJQVlA4TJMAAAAvH8AHED9AJmCxGor7JdBICGnIBCx26kUxPTXxEEjajAd4nFd82zc4zH8AgH9sEk1tyrkFp7VtO9El238V9ocGCEVQAX4UfuLtf60fJuuI/k8AvrBdlmUp8k1OKPPeZ01rFHsXA8nzWAEpw023CnsK50iHJM+SsgylEbnkeRDQpYz1ErKt15B3Og4U9CWsWL3mzwUA');
+  }
+}
